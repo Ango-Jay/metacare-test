@@ -1,12 +1,13 @@
 import React from "react"
 import SideMenu from "./components/SideMenu"
 import Header from "./components/Header";
-import { ReactComponent as SearchIcon } from "./icons/search.svg"
-import './App.css';
 import ResponseChart from "./components/ResponseChart";
 import RepliesChart from "./components/RepliesChart";
 import ResolutionChart from "./components/ResolutionChart";
 import RateChart from "./components/RateChart";
+import { ReactComponent as SearchIcon } from "./icons/search.svg"
+import './App.css';
+
 
 
 

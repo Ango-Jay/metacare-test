@@ -13,14 +13,14 @@ const SideMenu = () => {
             <div className="w-[100%] mb-0 sm:mb-0 sm:w-20 z-[1000] sm:z-[1000] bg-white h-[3rem] sm:min-h-screen sm:hover:w-80 group transition-[width] ease-in-out duration-200 lg:w-80 lg:hover:w-80 relative sm:fixed border-b border-gray-200 sm:border-0 sm:rs:overflow-y-auto lg:overflow-y-visible">
                 <a
                     href="#"
-                    // className="mobile-burger w-inline-block"
+                    
                     className="absolute top-0 right-0 flex sm:hidden flex-col mt-3 mr-3 justify-around w-[2rem] h-[1.5rem] bg-transparent pointer z-[10001]"
                     onClick={() => setIsMobile(!isMobile)}
                     style={{WebkitTapHighlightColor:"transparent"}}
                     role="button"
                 >
                     <div
-                        // className="mobile-burger-line"
+                        
                         className="w-[1.8rem] h-[0.18rem] bg-black rounded-xl relative origin-[1px] transition-[transform] ease-in-out duration-500"
                         style={
                             isMobile
@@ -29,7 +29,7 @@ const SideMenu = () => {
                         }
                     />
                     <div
-                        // className="mobile-burger-line"
+                      
                         className="w-[1.8rem] h-[0.18rem] bg-black rounded-xl relative origin-[1px] transition-[transform] ease-in-out duration-500"
                         style={
                             isMobile
@@ -38,7 +38,7 @@ const SideMenu = () => {
                         }
                     />
                     <div
-                        // className="mobile-burger-line"
+                     
                         className="w-[1.8rem] h-[0.18rem] bg-black rounded-xl relative origin-[1px] transition-[transform] ease-in-out duration-500"
                         style={
                             isMobile
