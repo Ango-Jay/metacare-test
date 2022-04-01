@@ -5,23 +5,23 @@ const Header = () => {
     return (
         <>
             <div>
-                <div className="flex pt-6 pl-3 justify-between">
-                    <div className="relative h-fit">
-                        <span className="absolute top-1/2 translate-x-[-50%] translate-y-[-50%] right-0"><SearchIcon /></span>
+                <div className="flex flex-col sm:flex-row pt-6 sm:pl-3 justify-between">
+                    <div className="relative h-fit px-3 sm:px-0">
+                        <span className="absolute top-1/2 translate-x-[-50%] translate-y-[-50%] right-[2em] sm:right-0"><SearchIcon /></span>
 
-                        <input className="bg-gray-200 rounded-lg py-3 px-3 md:w-[441px] focus:outline-none" placeholder="Ask us any question" type="search" name="name" />
+                        <input className="bg-gray-200 rounded-lg py-3 px-3 w-full sm:w-auto md:w-[441px] focus:outline-none" placeholder="Ask us any question" type="search" name="name" />
                     </div>
-                    <div className="border border-gray-200 rounded-lg mr-16">
-<UserNotifications />
-                </div>
+                    <div className="border border-gray-200 rounded-lg ml-3 mr-16 mt-6 w-[200px] sm:w-auto sm:mt-0">
+                        <UserNotifications />
+                    </div>
                 </div>
                 <div className="flex border-y border-gray-200 py-2 pl-3 mt-6">
-<ul className="flex list-none">
+                    <ul className="flex list-none">
                         <li className="text-black font-bold border-b-[3px] border-[#6837EF] pb-1 mb-[-.65rem]"><a href="#">Effiiency</a> </li>
-                        <li className="mx-8 text-gray-600"><a href="#">Volume</a></li>
-                        <li className="text-gray-600"><a href="#">Customer Satisfation</a></li>
-                        <li className="mx-8 text-gray-600"><a href="#">Backlog</a></li>
-</ul>
+                        <li className="mx-4 xs:mx-8 text-gray-600 hover:border-b-[3px] hover:border-[#6837EF] hover:pb-1 hover:mb-[-.65rem]"><a href="#">Volume</a></li>
+                        <li className="text-gray-600 hover:border-b-[3px] hover:border-[#6837EF] hover:pb-1 hover:mb-[-.65rem] text-center xs:text-left"><a href="#">Customer Satisfation</a></li>
+                        <li className="mx-4 xs:mx-8 text-gray-600 hover:border-b-[3px] hover:border-[#6837EF] hover:pb-1 hover:mb-[-.65rem]"><a href="#">Backlog</a></li>
+                    </ul>
                 </div>
             </div>
         </>
@@ -32,8 +32,8 @@ export default Header;
 
 
 
-const UserNotifications = ()=>{
-    return(
+const UserNotifications = () => {
+    return (
         <svg width="175" height="54" viewBox="0 0 175 54" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M27.235 21.4807C27.102 20.365 26.1525 19.5 25.001 19.5C23.8495 19.5 22.9 20.365 22.7669 21.4807C20.8899 22.3316 19.5843 24.2217 19.5843 26.4167V30.1799L18.3314 32.662C18.0796 33.1609 18.4422 33.75 19.001 33.75H22.879C23.1879 34.6239 24.0213 35.25 25.001 35.25C25.9806 35.25 26.8141 34.6239 27.1229 33.75H31.001C31.5598 33.75 31.9223 33.1609 31.6705 32.662L30.4176 30.1799V26.4167C30.4176 24.2217 29.112 22.3316 27.235 21.4807ZM28.9981 30.6964L29.7823 32.25H20.2197L21.0039 30.6964C21.0568 30.5916 21.0843 30.4759 21.0843 30.3585V26.4167C21.0843 24.2536 22.8379 22.5 25.001 22.5C27.1641 22.5 28.9176 24.2536 28.9176 26.4167V30.3585C28.9176 30.4759 28.9452 30.5916 28.9981 30.6964Z" fill="#A3A3C2" />
             <rect x="38" y="19" width="16" height="16" rx="4" fill="#F25A68" />
@@ -41,7 +41,7 @@ const UserNotifications = ()=>{
             <rect x="78" y="15" width="1" height="24" fill="#ECEBF5" />
             <path fillRule="evenodd" clipRule="evenodd" d="M119 43C127.837 43 135 35.8366 135 27C135 18.1634 127.837 11 119 11C110.163 11 103 18.1634 103 27C103 35.8366 110.163 43 119 43Z" stroke="#6837EF" />
             <path fillRule="evenodd" clipRule="evenodd" d="M151 28.0572L153.862 25.1953C154.122 24.9349 154.544 24.9349 154.805 25.1953C155.065 25.4556 155.065 25.8777 154.805 26.1381L151.471 29.4714C151.211 29.7318 150.789 29.7318 150.529 29.4714L147.195 26.1381C146.935 25.8777 146.935 25.4556 147.195 25.1953C147.456 24.9349 147.878 24.9349 148.138 25.1953L151 28.0572Z" fill="#696D8C" />
-            <rect style={{display:"none"}}  x="5" y="5" width="174" height="53" rx="15" stroke="#ECEBF5" />
+            <rect style={{ display: "none" }} x="5" y="5" width="174" height="53" rx="15" stroke="#ECEBF5" />
         </svg>
     )
 }
